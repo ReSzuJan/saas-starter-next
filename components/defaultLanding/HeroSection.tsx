@@ -11,7 +11,11 @@ const HeroSection = () => {
           <p className="py-6 text-2xl font-normal">
             {t('kickstart-your-enterprise')}
           </p>
-          <div className="flex items-center justify-center gap-2 ">
+          <div /** gap:8px;
+padding-right:214px;
+justify-content:flex-end;
+align-items:flex-end;
+ */ className="flex items-center justify-center gap-2 ">
             <Link
               href="/auth/join"
               className="btn btn-primary px-8 no-underline"
@@ -19,7 +23,12 @@ const HeroSection = () => {
               {t('get-started')}
             </Link>
             <Link
-              href="https://github.com/boxyhq/saas-starter-kit"
+/** padding-left:32px;
+padding-right:62px;
+justify-content:normal;
+align-items:flex-start;
+padding-top:16px;
+ */               href="https://github.com/boxyhq/saas-starter-kit"
               className="btn btn-outline px-8"
             >
               GitHub
