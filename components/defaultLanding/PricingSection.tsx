@@ -64,8 +64,7 @@ margin-left:0px;
 margin-right:24px;
  */ .Actions className="justify-center m-2">
                     <Button
-/** height:48px;
- */                       color="primary"
+                       color="secondary"
                       className="md:w-full w-3/4 rounded-md"
                       size="md"
                     >
