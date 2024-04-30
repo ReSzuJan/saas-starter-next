@@ -4,7 +4,12 @@ const { withSentryConfig } = require('@sentry/nextjs');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: { esmExternals: false, webpackBuildWorker: true },
+  experimental: { esmExternals: false, webpackBuildWorker: true, 
+
+      swcPlugins: process.env.NODE_ENV !== 'production' ? [
+        ['harmony-ai-plugin', {rootDir: __dirname}]
+      ] : [],
+     },
   reactStrictMode: true,
   images: {
     remotePatterns: [
