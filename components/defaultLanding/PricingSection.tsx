@@ -9,7 +9,9 @@ const PricingSection = () => {
   return (
     <section className="py-6">
       <div className="flex flex-col justify-center space-y-6">
-        <h2 className="text-center text-4xl font-bold normal-case">
+        <h2 /** line-height:50px;
+letter-spacing:0px;
+ */ className="text-center text-4xl font-bold normal-case">
           {t('pricing')}
         </h2>
         <p className="text-center text-xl">
@@ -21,7 +23,9 @@ const PricingSection = () => {
             {plans.map((plan, index) => {
               return (
                 <Card
-/** gap:0px;
+/** gap:2px;
+padding-bottom:14px;
+ */ /** gap:0px;
 padding-bottom:8px;
  */                   key={`plan-${index}`}
                   className="rounded-md dark:border-gray-200 border border-gray-300"
@@ -61,10 +65,17 @@ align-items:normal;
 margin-bottom:0px;
 margin-top:0px;
 margin-left:0px;
+margin-right:16px;
+ */ /** justify-content:normal;
+align-items:normal;
+margin-bottom:0px;
+margin-top:0px;
+margin-left:0px;
 margin-right:24px;
  */ .Actions className="justify-center m-2">
                     <Button
-                       color="secondary"
+/** background-color:#EE8181FF;
+ */                        color="secondary"
                       className="md:w-full w-3/4 rounded-md"
                       size="md"
                     >
