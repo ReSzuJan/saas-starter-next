@@ -11,7 +11,7 @@ const FeatureSection = () => {
           {t('features')}
         </h2>
         <p className="text-center text-xl">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+          Lorem Ipsum is simply dummy text of the printing ejsijfojd and typesetting
           industry.
         </p>
         <div className="flex items-center justify-center">

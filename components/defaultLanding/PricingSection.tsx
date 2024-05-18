@@ -21,25 +21,34 @@ const PricingSection = () => {
             {plans.map((plan, index) => {
               return (
                 <Card
-                  key={`plan-${index}`}
+/** gap:0px;
+padding-bottom:8px;
+ */                   key={`plan-${index}`}
                   className="rounded-md dark:border-gray-200 border border-gray-300"
                 >
-                  <Card.Body>
+                  <Card /** margin-left:8px;
+ */ .Body>
                     <Card.Title tag="h2">
                       {plan.currency} {plan.amount} / {plan.duration}
                     </Card.Title>
                     <p>{plan.description}</p>
                     <div className="mt-5">
-                      <ul className="flex flex-col space-y-2">
+                      <ul /** gap:8px;
+ */ className="flex flex-col space-y-2">
                         {plan.benefits.map(
                           (benefit: string, itemIndex: number) => {
                             return (
                               <li
-                                key={`plan-${index}-benefit-${itemIndex}`}
+/** gap:4px;
+align-items:flex-start;
+margin-top:0px;
+ */                                 key={`plan-${index}-benefit-${itemIndex}`}
                                 className="flex items-center"
                               >
-                                <CheckIcon className="h-5 w-5" />
-                                <span className="ml-1">{benefit}</span>
+                                <CheckIcon /** margin-top:2px;
+ */ className="h-5 w-5" />
+                                <span /** margin-left:0px;
+ */ className="ml-1">{benefit}</span>
                               </li>
                             );
                           }
@@ -47,9 +56,15 @@ const PricingSection = () => {
                       </ul>
                     </div>
                   </Card.Body>
-                  <Card.Actions className="justify-center m-2">
+                  <Card /** justify-content:normal;
+align-items:normal;
+margin-bottom:0px;
+margin-top:0px;
+margin-left:0px;
+margin-right:24px;
+ */ .Actions className="justify-center m-2">
                     <Button
-                      color="primary"
+                       color="secondary"
                       className="md:w-full w-3/4 rounded-md"
                       size="md"
                     >
