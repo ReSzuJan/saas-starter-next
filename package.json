@@ -51,7 +51,7 @@
     "mixpanel-browser": "2.50.0",
     "next": "14.2.3",
     "next-auth": "4.24.7",
-    "harmony-ai-editor": "^0.11.10",
+    "harmony-ai-editor": "^0.12.8",
     "harmony-ai-plugin": "^0.1.18",
     "next-i18next": "15.3.0",
     "nodemailer": "6.9.13",
